@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* Importing Bootstrap SCSS file. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+// all mixins
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-padding {
+    padding: 5px 25px;
+}
+// all mixins
+
+// universal styles
+img, svg {
+    vertical-align: middle;
+    max-width: 100%;
+}
+.form-control,input.btn,button {
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+.gap-20 {
+    gap: 20px;
+}
+// universal styles
+.btn-primary {
+    --bs-btn-color: #fff!important;
+    --bs-btn-bg: #20A544!important;
+    --bs-btn-border-color: #20A544!important;
+    --bs-btn-hover-color: #fff!important;
+    --bs-btn-hover-bg: #20A544!important;
+    --bs-btn-hover-border-color: #20A544!important;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff!important;
+    --bs-btn-active-bg: #20A544;
+    --bs-btn-active-border-color: #20A544!important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125)!important;
+    --bs-btn-disabled-color: #fff!important;
+    --bs-btn-disabled-bg: #20A544!important;
+    --bs-btn-disabled-border-color: #20A544!important;
+}
+// universal styles
+
+:root {
+    --bg-primary:#20A544;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
